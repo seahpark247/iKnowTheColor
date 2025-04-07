@@ -8,6 +8,8 @@
 import SwiftUI
 import AVFoundation
 
+// 앱 처음실행때만 인트로 말해주고, 소리 꺼버리기.
+// 설정 안에다가 목소리 스피드 설정하게 하기?
 struct ContentView: View {
     @StateObject private var cameraModel = CameraModel()
     @StateObject private var speechService = SpeechService()

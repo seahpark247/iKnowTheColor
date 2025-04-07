@@ -29,9 +29,22 @@
 		114AD5A32D9F0EB700585EC9 /* iKnowTheColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKnowTheColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		114AD6D92DA4660800585EC9 /* Exceptions for "iKnowTheColor" folder in "iKnowTheColor" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 114AD5882D9F0EB500585EC9 /* iKnowTheColor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		114AD58B2D9F0EB500585EC9 /* iKnowTheColor */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				114AD6D92DA4660800585EC9 /* Exceptions for "iKnowTheColor" folder in "iKnowTheColor" target */,
+			);
 			path = iKnowTheColor;
 			sourceTree = "<group>";
 		};
@@ -399,6 +412,8 @@
 				DEVELOPMENT_TEAM = 4KCT9455S7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iKnowTheColor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required for color detection for the visually impaired.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +443,8 @@
 				DEVELOPMENT_TEAM = 4KCT9455S7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = iKnowTheColor/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera access is required for color detection for the visually impaired.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

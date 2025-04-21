@@ -8,7 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-// add function: 카메라 에러 시, 보이스로 알려줘야 함!!!
 class CameraModel: NSObject, ObservableObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     @Published var colorName: String? = nil
     @Published var detectedColor: UIColor = .white

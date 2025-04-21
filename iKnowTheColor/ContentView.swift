@@ -8,11 +8,6 @@
 import SwiftUI
 import AVFoundation
 
-// 앱 처음실행때만 인트로 말해주고, 소리 꺼버리기.
-// 설정 안에다가 목소리 스피드 설정하게 하기?
-// 색깔 정확도 높아져야 함.
-// 소리 속도가 너무 빠른가?
-
 struct ContentView: View {
     @StateObject private var cameraModel = CameraModel()
     @StateObject private var speechService = SpeechService()
@@ -53,20 +48,25 @@ struct ContentView: View {
             cameraModel.checkPermission()
             
             // 앱 시작 안내 음성
-            speechService.speak("I know the color started. It will detect the color of objects in the center of the screen.")
+            speechService.speak("I know the color started. Tap anywhere on the screen to hear the color at the center.")
         }
-        .onChange(of: cameraModel.colorName) { newColorName in
-            if let colorName = newColorName {
-                speechService.announceColor(colorName)
-            }
-        }
+        // 이 onChange 부분을 제거하여 색상이 변경될 때 자동으로 알려주지 않도록 함
+        // .onChange(of: cameraModel.colorName) { newColorName in
+        //     if let colorName = newColorName {
+        //         speechService.announceColor(colorName)
+        //     }
+        // }
         .onTapGesture {
-            // 화면 탭하면 현재 색상 다시 알려주기
-            // 햅틱 기능 추가
-            impactFeedback.impactOccurred(intensity: 0.8)
+            // 첫 번째 햅틱 피드백
+            impactFeedback.impactOccurred(intensity: 1)
+            
+            // 두 번째 햅틱 피드백 (0.2초 후에 실행)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+                impactFeedback.impactOccurred(intensity: 1)
+            }
             
             if let colorName = cameraModel.colorName, !colorName.isEmpty {
-                speechService.speak("Current color is \(colorName).")
+                speechService.speak(colorName)
             } else {
                 speechService.speak("No color detected yet.")
             }
@@ -86,7 +86,7 @@ struct ContentView: View {
         }
         .accessibilityElement(children: .ignore)
         .accessibilityLabel("Color detection screen")
-        .accessibilityHint("Tap the screen to hear the current color again.")
+        .accessibilityHint("Tap the screen to hear the current color.")
     }
 }
 

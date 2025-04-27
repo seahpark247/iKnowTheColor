@@ -50,12 +50,6 @@ struct ContentView: View {
             // 앱 시작 안내 음성
             speechService.speak("I know the color started. Tap anywhere on the screen to hear the color at the center.")
         }
-        // 이 onChange 부분을 제거하여 색상이 변경될 때 자동으로 알려주지 않도록 함
-        // .onChange(of: cameraModel.colorName) { newColorName in
-        //     if let colorName = newColorName {
-        //         speechService.announceColor(colorName)
-        //     }
-        // }
         .onTapGesture {
             // 첫 번째 햅틱 피드백
             impactFeedback.impactOccurred(intensity: 1)

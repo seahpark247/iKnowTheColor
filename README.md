@@ -35,7 +35,7 @@ Powered by **AVFoundation** for speech synthesis and a **custom Hue/Saturation/V
 4. Use accessibility gestures for additional functions (e.g., VoiceOver navigation).
 
 ## Technologies
-- Swift for iOS development
-- AVFoundation for speech synthesis
-- Custom HSV Color Detection Algorithm for reliable color classification
-- SwiftUI with full Accessibility API integration
+* **Swift** for iOS development
+* **AVFoundation** for speech synthesis
+* **Custom HSV Color Detection Algorithm** for reliable color classification
+* **SwiftUI** with full Accessibility API integration

@@ -1,8 +1,6 @@
 # iKnowTheColor
 
-<p align="center">
-  <img src="./images/app_icon.png" alt="iKnowTheColor App Icon" height="100">
-</p>
+<img src="./images/app_icon.png" height="100" alt="App Icon">
 
 An iOS application that helps visually impaired users identify colors in real time using the device camera and delivers the result via voice feedback.  
 Powered by **AVFoundation** for speech synthesis and a **custom Hue/Saturation/Value-based algorithm** for accurate color recognition.
@@ -17,7 +15,6 @@ Powered by **AVFoundation** for speech synthesis and a **custom Hue/Saturation/V
 </p>
 
 ---
-
 
 ## Features
 

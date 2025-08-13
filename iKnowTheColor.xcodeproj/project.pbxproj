@@ -24,6 +24,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		110C8CBA2E4C26A100B8DDDA /* main_screenshot.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screenshot.PNG; sourceTree = "<group>"; };
+		110C8CBB2E4C26A100B8DDDA /* main_screenshot2.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_screenshot2.PNG; sourceTree = "<group>"; };
+		110C8CBC2E4C26B400B8DDDA /* app_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = app_icon.png; sourceTree = "<group>"; };
 		114AD5892D9F0EB500585EC9 /* iKnowTheColor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iKnowTheColor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		114AD5992D9F0EB700585EC9 /* iKnowTheColorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKnowTheColorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		114AD5A32D9F0EB700585EC9 /* iKnowTheColorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iKnowTheColorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +88,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		110C8CB92E4C203E00B8DDDA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				110C8CBA2E4C26A100B8DDDA /* main_screenshot.PNG */,
+				110C8CBB2E4C26A100B8DDDA /* main_screenshot2.PNG */,
+				110C8CBC2E4C26B400B8DDDA /* app_icon.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
 		114AD5802D9F0EB500585EC9 = {
 			isa = PBXGroup;
 			children = (
+				110C8CB92E4C203E00B8DDDA /* images */,
 				114AD58B2D9F0EB500585EC9 /* iKnowTheColor */,
 				114AD59C2D9F0EB700585EC9 /* iKnowTheColorTests */,
 				114AD5A62D9F0EB700585EC9 /* iKnowTheColorUITests */,

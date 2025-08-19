@@ -2,8 +2,7 @@
 
 <img src="./images/app_icon.png" height="100" alt="App Icon">
 
-An iOS application that helps visually impaired users identify colors in real time using the device camera and delivers the result via voice feedback.  
-Powered by **AVFoundation** for speech synthesis and a **custom Hue/Saturation/Value-based algorithm** for accurate color recognition.
+This application is designed to **assist blind and visually impaired individuals** by identifying colors of objects in real time using the device’s camera. It provides **instant voice feedback**, ensuring users can understand and interact with their surroundings more independently.
 
 ---
 
